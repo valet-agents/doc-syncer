@@ -1,6 +1,6 @@
 # Doc Syncer
 
-When docs change in a GitHub repo, updates the corresponding Notion pages and notifies the team in Slack with a summary of changes.
+When docs change in a GitHub repo, updates the corresponding Notion pages to reflect the changes.
 
 <table>
   <tr>
@@ -9,7 +9,7 @@ When docs change in a GitHub repo, updates the corresponding Notion pages and no
   </tr>
   <tr>
     <td><strong>CONNECTORS</strong></td>
-    <td><code>notion-mcp</code> <code>slack-mcp</code></td>
+    <td><code>notion-mcp</code></td>
   </tr>
   <tr>
     <td colspan="2" align="center">

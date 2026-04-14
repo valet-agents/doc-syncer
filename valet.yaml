@@ -1,6 +1,6 @@
 name: doc-syncer
 display_name: Doc Syncer
-description: "When docs change in a GitHub repo, updates the corresponding Notion pages and notifies the team in Slack with a summary of changes."
+description: "When docs change in a GitHub repo, updates the corresponding Notion pages to reflect the changes."
 category: developer-tools
 
 connectors:
@@ -8,12 +8,6 @@ connectors:
     description: "Notion MCP server for reading and updating documentation pages"
     slot_descriptions:
       NOTION_API_TOKEN: "Notion integration token (secret_...) with access to the target documentation pages"
-
-  - catalog: slack-mcp
-    description: "Slack MCP server for posting change summaries to the team channel"
-    slot_descriptions:
-      SLACK_BOT_TOKEN: "Slack bot token (xoxb-...) with chat:write, channels:read scopes. Bot must be invited to the target channel."
-      SLACK_TEAM_ID: "Slack workspace team ID (starts with T)"
 
 channels:
   - catalog: github-webhook
