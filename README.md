@@ -9,7 +9,7 @@ A [Valet](https://valet.dev) agent that syncs documentation. When docs change in
   </tr>
   <tr>
     <td><strong>CONNECTORS</strong></td>
-    <td><code>notion-mcp</code> <code>slack-mcp</code></td>
+    <td><code>notion-mcp</code></td>
   </tr>
   <tr>
     <td colspan="2" align="center">
