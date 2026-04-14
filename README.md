@@ -1,6 +1,6 @@
 # Doc Syncer
 
-When docs change in a GitHub repo, updates the corresponding Notion pages to reflect the changes.
+A [Valet](https://valet.dev) agent that syncs documentation. When docs change in a GitHub repo, updates the corresponding Notion pages and notifies the team in Slack with a summary of changes.
 
 <table>
   <tr>
