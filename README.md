@@ -1,6 +1,6 @@
 # Doc Syncer
 
-When docs change in a GitHub repo, updates the corresponding Notion pages to reflect the changes.
+When markdown in your repo changes, Doc Syncer finds the matching Notion page and keeps it in sync — no copy-paste, no drift.
 
 <table>
   <tr>
