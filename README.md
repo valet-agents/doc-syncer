@@ -14,7 +14,7 @@ When markdown in your repo changes, Doc Syncer finds the matching Notion page an
   <tr>
     <td colspan="2" align="center">
       <br />
-      <a href="https://dashboard.valet.dev/setup/configure?from=github.com/valet-agents/doc-syncer">
+      <a href="https://dashboard.valet.dev/deploy?from=github.com/valet-agents/doc-syncer">
         <img src="https://raw.githubusercontent.com/valet-agents/doc-syncer/main/.github/deploy-button.svg" alt="Deploy Agent →" height="40" />
       </a>
       <br /><br />
