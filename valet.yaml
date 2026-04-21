@@ -2,12 +2,34 @@ name: doc-syncer
 display_name: Doc Syncer
 description: "When docs change in a GitHub repo, updates the corresponding Notion pages to reflect the changes."
 category: developer-tools
+author: Valet
+
+story:
+  hero: "Push to GitHub, docs sync to Notion automatically."
+  subheadline: "When markdown in your repo changes, Doc Syncer finds the matching Notion page and keeps it in sync — no copy-paste, no drift."
+  steps:
+    - role: trigger
+      title: "A doc changes in your repo."
+      body: "Any push that touches a markdown file fires the sync. Code-only commits get ignored — no noise."
+      catalog: github-webhook
+    - role: action
+      title: "Doc Syncer reads the diff."
+      body: "Fetches each changed doc at the head commit, then matches it to a Notion page by title or source path."
+      catalog: github-webhook
+    - role: outcome
+      title: "Notion catches up."
+      body: "Updates matching pages in place, creates new pages for added docs. Structure and formatting preserved."
+      catalog: notion-mcp
 
 connectors:
   - catalog: notion-mcp
     description: "Notion MCP server for reading and updating documentation pages"
     slot_descriptions:
       NOTION_API_TOKEN: "Notion integration token (secret_...) with access to the target documentation pages"
+    ui:
+      headline: "Point Doc Syncer at your Notion."
+      blurb: "One token lets the sync read existing pages and write updates. Share each target page with the integration in Notion."
+      done_note: "Connected to your Notion workspace"
 
 channels:
   - catalog: github-webhook
@@ -16,3 +38,7 @@ channels:
       - push
     slot_descriptions:
       GITHUB_WEBHOOK_SECRET: "Webhook secret for HMAC-SHA256 signature validation"
+    ui:
+      headline: "Wire up your docs repo."
+      blurb: "Point GitHub's push webhook at Doc Syncer. Only commits touching markdown fire the sync — code pushes are ignored."
+      done_note: "Listening for pushes to your repo"

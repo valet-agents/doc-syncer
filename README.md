@@ -1,6 +1,6 @@
 # Doc Syncer
 
-A [Valet](https://valet.dev) agent that syncs documentation. When docs change in a GitHub repo, updates the corresponding Notion pages and notifies the team in Slack with a summary of changes.
+When markdown in your repo changes, Doc Syncer finds the matching Notion page and keeps it in sync — no copy-paste, no drift.
 
 <table>
   <tr>
