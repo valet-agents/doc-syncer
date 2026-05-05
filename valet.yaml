@@ -4,6 +4,9 @@ description: "When docs change in a GitHub repo, updates the corresponding Notio
 category: developer-tools
 author: Valet
 
+example:
+  prompt: "Are any docs out of sync with the repo?"
+
 story:
   hero: "Push to GitHub, docs sync to Notion automatically."
   subheadline: "When markdown in your repo changes, Doc Syncer finds the matching Notion page and keeps it in sync — no copy-paste, no drift."
